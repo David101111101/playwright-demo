@@ -3,7 +3,9 @@
   "version": "1.0.0",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "test:debug": "set PWDEBUG=1 && npx playwright test",
+    "test:api": "set DEBUG=pw:api && npx playwright test tests/assert.spec.ts"
   },
   "keywords": [],
   "author": "",
